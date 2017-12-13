@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo Start",
+    "prestart": "echo prestart",
+    "poststart": "echo posstart",
+    "preinstall": "mkdir src/components/bootstrap/ src/components/font-awesome/",
+    "postinstall": "cp -r node_modules/bootstrap/dist src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome && cp -r node_modules/font-awesome/fonts src/components/font-awesome"
+  },
+  "author": "geekcom",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
